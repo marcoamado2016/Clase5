@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saludar Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="button" id="b1" value="Saluar a marco">
+    <input type="button" id="b2" value="Saludar a Maria">
+    <script>
+    $(document).ready(function(){
+    $('#b1').click(function (){
+        alert('Hola Marco');
+    });
+    $('#b2').click(function(){
+        alert('Hola Maria');
+    });
+    });
+    </script>
+</body>
+</html>

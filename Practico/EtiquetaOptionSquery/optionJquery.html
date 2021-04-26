@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>option Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <label >Seleccione una opcion</label>
+    <select name="se" id="s">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    </select>
+
+    <script>
+        /*
+    $(document).ready(inicio);
+    function inicio(){
+     $('select').change(alerta);
+    }
+
+    function alerta(){
+     alert($('select').val())
+    }
+
+    */
+   $(document).ready(function(){
+   $('select').change(function(){
+
+    alert($('select').val());
+   });    
+   })
+    </script>
+</body>
+</html>

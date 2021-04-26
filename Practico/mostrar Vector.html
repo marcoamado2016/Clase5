@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>  
+        var personas = [{'Nombre':'José', 'Apellido':'Sanchez', 'Edad':45},  
+        {'Nombre':'Juan', 'Apellido':'Perez', 'Edad':23},  
+        {'Nombre':'Lucia', 'Apellido':'Lopez', 'Edad':35},  
+        {'Nombre':'Carlos', 'Apellido':'Wriz', 'Edad':29},  
+        {'Nombre':'Laura', 'Apellido':'Rodriguez', 'Edad':32},  
+        {'Nombre':'Pablo', 'Apellido':'Martinez', 'Edad':41},  
+        {'Nombre':'Laura', 'Apellido':'Gonzalez', 'Edad':21}  
+        ];  
+        for (var i = 0; i < personas.length; i++) { //Inicializacion, Condicion, Actualizacion  
+        salida=("Hola, yo soy " + personas[i]['Nombre'] + ' ' + personas[i]['Apellido'] + ' ' + 'y tengo ' + personas[i]['Edad'] + ' ' + 'años'+' <br>');  
+       // document.writeln(salida);  
+        }  
+        document.writeln(salida); 
+        </script>
+</body>
+</html>

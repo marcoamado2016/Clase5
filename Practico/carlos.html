@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estado Civil</h1>;
+    <script>
+        var carga = "";
+        var a = 1;
+        var nombre = prompt('Ingrese su Nombre:');
+        var apellido = prompt('Ingrese su Apellido');
+        do {
+            if(confirm("Desea cargar estado civil?")) {
+                var estado = prompt('Ingrese su estado civil');
+                var estado = estado.toLowerCase();
+                switch (estado) {
+                    case 'soltero':
+                        alert('Excelente');
+                        break;                    
+                    case 'casado':
+                        alert('Existen peores cosas');
+                        break;
+                    case 'divorciado':
+                        alert('Te felicito');
+                        break;
+                    case 'viudo':
+                        alert('Lo siento');
+                        break;                
+                    default:
+                        alert('Mal escrito');
+                        a = 1;
+                        break;
+                }                                                        
+            }
+        } while (confirm("Desea volver a la pregunta?"));
+        document.write('Hasta luego ' + nombre + ' ' + apellido);
+    </script>        
+</body>
+</html>

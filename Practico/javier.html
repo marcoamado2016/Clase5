@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var titulo = ["Nombre","Apellido","Edad","Profesión","Estado civil", "Domicilio", "Telefono"];
+var sizearray = titulo.length;
+console.log(sizearray);
+var numpersonas = 0;
+var personal = new Array();
+var fichero = new Array();
+var unido = "";
+
+do { 
+	confirmacion=confirm("¿Desea comenzar la carga de datos?");
+	
+	if (confirmacion==false) {
+		alert("Gracias");	
+		break;
+
+	}else
+		{numpersonas=numpersonas + 1;}
+	
+	console.log(numpersonas);
+	
+	for (var x=0; x < sizearray-1; x++){
+
+		personal[x]= prompt("Ingrese su "+titulo[x]+":");
+			console.log(personal[x]);
+		unido = unido.concat("<Br><b>"+titulo[x]+ ":<b> &nbsp &nbsp" + personal[x]);
+	}
+// personal[x]- array con los datos de la persona ingresada
+// necesito armar el array de dos dimensiones fichero 
+	//fichero= personal[].push();
+
+
+document.write(unido);
+}while (true){}
+alert("sali de DO");
+
+
+    </script>
+</body>
+</html>

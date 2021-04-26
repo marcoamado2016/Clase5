@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion-Evento-Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="p1">Hace click</p>
+    <p id="p2">Hace doble click</p>
+    <h2>Pasar el mouse por arriba de H2</h2>
+</body>
+<script>
+    $(document).ready(inicio);
+
+    function inicio(){
+    $('#p1').click(alerta1);
+    $('#p2').dblclick(alerta2);
+    $('h2').mouseover(alerta3);
+    }
+
+    function alerta1(){
+        alert('Hiciste un click'); 
+    }
+
+    function alerta2(){
+        alert('Hiciste doble click'); 
+    }
+    function alerta3(){
+        alert('Pasaste por arriba el mouse'); 
+    }
+</script>
+</html>
